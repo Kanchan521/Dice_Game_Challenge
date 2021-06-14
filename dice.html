@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Challenge</title>
+    <link rel="stylesheet" href="dice.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-head">
+            <h1 class="lead" >Welcome to The Dice Challenge</h1>
+            <div class="chbtn">
+            <input type="radio" id="pla" name="select" onclick="selp()">
+            <label for="pla" class="rlead">player</label><br>
+             <input type="radio" id="comp" name="select"onclick="selcm()" checked>
+             <label for="comp" class="rlead">computer</label><br>
+            </div>
+       </div>
+       <div class="container-body">
+           <div  class="container-bplayer">
+             <h1  class="lead" id="plays">Player:</h1><span id="pscore">0</span>
+               <div id="player"></div>
+            </div>
+           <div class="container-bcomputer">
+               <h1 class="lead" id="headcomp">Computer:</h1><span id="cscore">0</span>
+               <div  id="computer"></div>
+             </div>
+        </div>
+   
+    <div class="footer">
+        <div >
+        <button class="btn" onclick="mypfun()" id="pc" >Play</button> 
+        <button class="btn" onclick="playone()" id="pbutton" style="visibility: hidden;">Play1</button> 
+         <button class="btn" onclick="playtwo()" id="hbutton" style="visibility: hidden;">Play2</button>
+        <button class="btn" onclick="reset()">Replay</button>
+      
+        </div>
+        <p class="play" id="demo">Let's Play</p>
+    </div>
+</div>
+<script src="dice.js"></script>
+</body>
+</html> 
